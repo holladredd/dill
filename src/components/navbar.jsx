@@ -1,5 +1,5 @@
 import React from 'react'
-import { Appbar,Toolbar, styled } from "@mui/material"
+import { AppBar, Toolbar, Typography } from "@mui/material"
 
 const StyleToolbar = styled(Toolbar)({
   display: "flex",
@@ -8,9 +8,12 @@ const StyleToolbar = styled(Toolbar)({
 })
 const navbar = () => {
   return (
-    <Appbar position="stick">
-      <StyleToolbar >Navbar</StyleToolbar>
-    </Appbar>
+    <AppBar  position='stick'>
+      <StyleToolbar>
+        <Typography variant="h4" sx={{display:{sx:"none", sm:"block"}}}>DREDD</Typography>
+        <pets sx={{display:{sx:"block", sm:"none"}}} />
+      </StyleToolbar>
+    </AppBar>
   )
 }
 
