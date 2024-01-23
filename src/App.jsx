@@ -1,17 +1,21 @@
-import { Add } from '@mui/icons-material'
-import Button from '@mui/material/Button'
+import { Box, Stack } from "@mui/material"
+import  Sidebar from "./components/sidebar"
+import Feed from "./components/feed"
+import Rightbar from "./components/rightbar"
+import Navbar from "./components/navbar"
 
 
 function App() {
 
-  
-
   return (
-    <div>
-      <Button variant="contained" color="primary" startIcon={<Add />}>
-        Hello World
-      </Button>
-    </div>
+    <Box>
+      <Navbar />
+      <Stack direction="row" spacing={2} justifyContent="space-between">
+        <Sidebar />
+        <Feed />
+        <Rightbar />
+      </Stack>
+    </Box>
   )
 }
 
