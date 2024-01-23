@@ -1,5 +1,6 @@
 import React from 'react'
-import { AppBar, Toolbar, Typography } from "@mui/material"
+import { AppBar, Toolbar, Typography, styled } from "@mui/material"
+import { Pets } from '@mui/icons-material'
 
 const StyleToolbar = styled(Toolbar)({
   display: "flex",
@@ -10,8 +11,8 @@ const navbar = () => {
   return (
     <AppBar  position='stick'>
       <StyleToolbar>
-        <Typography variant="h4" sx={{display:{sx:"none", sm:"block"}}}>DREDD</Typography>
-        <pets sx={{display:{sx:"block", sm:"none"}}} />
+        <Typography variant="h6" sx={{dispaly:{sx:"none", sm:"block"}}}>DREDD</Typography>
+        <Pets sx={{dispaly:{sx:"block", sm:"none"}}}/>
       </StyleToolbar>
     </AppBar>
   )
